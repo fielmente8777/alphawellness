@@ -1,9 +1,6 @@
-export const enCodeText = encodeURIComponent(`Hello Team,
-
-I would like to enquire about booking a stay at The Acacia Morjim Goa.
-
-Please share room availability and best offers.
-
+export const enCodeText = encodeURIComponent(`Hello Alpha Wellness Resort,
+I would like to make a reservation.
+Please confirm availability and booking details.
 Thank you.`);
 
 
@@ -19,10 +16,10 @@ export const contact = {
     instagram: "https://www.instagram.com/acaciamorjim/",
     youtube: "https://www.youtube.com/@TheAcaciaHotelsandVillas",
   },
-  callCta: `tel:+917888069977`,
-  WhatsappCta: `https://wa.me/+917888069977?text=${enCodeText}`,
-  formDomain: "acaciahotel",
-  // formDomain: "testmulti", //for testing
+  callCta: `tel:+919901503604`,
+  WhatsappCta: `https://wa.me/+919901503604?text=${enCodeText}`,
+  // formDomain: "",
+  formDomain: "testmulti", //for testing
   formHid: "",
   // formHid: "",
 };
