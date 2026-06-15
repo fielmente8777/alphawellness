@@ -19,7 +19,7 @@ const HealersCard: React.FC<HealersProps["cards"][0]> = ({
       </div>
       <div className="w-full space-y-1">
         <p className="font-primary text-dark text-xl">{name}</p>
-        <p className="">{profession}</p>
+        <p className="text-secondary uppercase">{profession}</p>
       </div>
     </div>
   );

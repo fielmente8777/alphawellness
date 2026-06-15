@@ -229,7 +229,7 @@ export const landingPageData = {
       {
         image: "/landing-page/healers/healer-1.png",
         name: "Dr. Rizwan Ahmed S. A",
-        profession: "Functional medicine and Ayurveda",
+        profession: "Functional medicine & NUTRITIONIST",
       },
       {
         image: "/landing-page/healers/healer-2.png",
@@ -239,12 +239,12 @@ export const landingPageData = {
       {
         image: "/landing-page/healers/healer-3.png",
         name: "Dr. Arshiya Anjum",
-        profession: "Functional medicine and Ayurveda",
+        profession: "Functional medicine PRACTITIONER",
       },
       {
         image: "/landing-page/healers/healer-4.png",
         name: "Dr. Joy Varghese",
-        profession: "Functional medicine and Ayurveda",
+        profession: "SENIOR CONSULTANT FOR FATTY LIVER & METABOLIC DISORDERS",
       },
     ],
     buttons: [
