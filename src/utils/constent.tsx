@@ -7,7 +7,7 @@ Thank you.`);
 export const contact = {
   email: "info@alphawellnessresort.com",
   mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3703.963821848792!2d76.72912319999999!3d12.398130799999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3baf776c962bcd51%3A0x15bc5f6ae9430c7f!2sAlpha%20Wellness%20Resort%20%7C%20Ayurveda%20%7C%20Panchakarma%20%7C%20Functional%20Medicine%20Treatments%20%7C%20Mysore!5e1!3m2!1sen!2sin!4v1781258426975!5m2!1sen!2sin",
-  phone: ["+91 99015 03604", "+91 97311 75551"],
+  phone: ["+91 73384 89786", "+91 97311 75551"],
   address:
     "Melapura, Mysore, Karnataka, IndiaLand Mark - Near Payana Car Museum",
   addressLink: "https://maps.app.goo.gl/557Jw5c9vVggGLQU6",
@@ -16,10 +16,10 @@ export const contact = {
     instagram: "https://www.instagram.com/acaciamorjim/",
     youtube: "https://www.youtube.com/@TheAcaciaHotelsandVillas",
   },
-  callCta: `tel:+919901503604`,
-  WhatsappCta: `https://wa.me/+919901503604?text=${enCodeText}`,
-  // formDomain: "",
-  formDomain: "testmulti", //for testing
+  callCta: `tel:+917338489786`,
+  WhatsappCta: `https://wa.me/+917338489786?text=${enCodeText}`,
+  formDomain: "alphawellnessresort",
+  // formDomain: "testmulti", //for testing
   formHid: "",
   // formHid: "",
 };

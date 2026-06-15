@@ -5,6 +5,11 @@ import "./style.scss";
 import LandingFooter from "@/components/footer/LandingFooter";
 import ImagePopup from "@/components/pop-up/ImagePopup";
 import { WebProvider } from "@/context-api/WebContext";
+import PopUpForm from "@/components/pop-up/PopUpForm";
+import Script from "next/script";
+import Whatsapp from "@/components/ContactButton/WhatsApp";
+import { contact } from "@/utils/constent";
+import Call from "@/components/ContactButton/Call";
 const gfsDidot = GFS_Didot({
   variable: "--font-gfs-didot",
   subsets: ["latin"],
@@ -61,8 +66,8 @@ export const metadata: Metadata = {
       "max-video-preview": -1,
       "max-image-preview": "large",
       "max-snippet": -1,
-    }
-  }
+    },
+  },
 };
 
 export default function RootLayout({
@@ -75,13 +80,29 @@ export default function RootLayout({
       lang="en"
       className={`${gfsDidot.variable} ${montserrat.variable} ${tenor.variable} antialiased`}
     >
-      <body className="" suppressHydrationWarning={true} >
+      <body className="" suppressHydrationWarning={true}>
         <WebProvider>
           {children}
           <LandingFooter />
           <ImagePopup />
+          <PopUpForm />
+          <Whatsapp whatsAppNumber={contact.phone[0]} />
+          <Call callNumber={contact.phone[0]} />
         </WebProvider>
       </body>
+      {/* <!-- Eazbot Script (Next.js) --> */}
+      <Script id="chatbot-config" strategy="afterInteractive">
+        {`
+    window.eazbotConfig = {
+       ndid: "65a11374-3cea-458e-9565-e8ef5c8dc462",
+       hid: "14042953",
+    };
+  `}
+      </Script>
+      <Script
+        src="https://cb-script.dyq28lyxrazm2.amplifyapp.com/widget/lead-chatbot.js"
+        strategy="afterInteractive"
+      />
     </html>
   );
 }
