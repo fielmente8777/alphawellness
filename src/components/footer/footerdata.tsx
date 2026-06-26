@@ -67,8 +67,8 @@ export const footerData: FooterData = {
           icon: <FillCallIcon />,
           label: contact.phone[0],
           href: "tel:" + contact.phone[0],
-          label2: contact.phone[1],
-          href2: "tel:" + contact.phone[1],
+          // label2: contact.phone[1],
+          // href2: "tel:" + contact.phone[1],
         },
 
         {
