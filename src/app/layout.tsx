@@ -81,7 +81,7 @@ export default function RootLayout({
       className={`${gfsDidot.variable} ${montserrat.variable} ${tenor.variable} antialiased`}
     >
       <head>
-        
+        <meta name="google-site-verification" content="E_5MfKghUUN7r-di4Mp7a6VBtuXgsdND5logjz5enOo" />
         {/* <!-- Google tag (gtag.js) --> */}
         <Script
           strategy="afterInteractive"
