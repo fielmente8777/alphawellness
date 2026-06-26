@@ -81,6 +81,21 @@ export default function RootLayout({
       className={`${gfsDidot.variable} ${montserrat.variable} ${tenor.variable} antialiased`}
     >
       <head>
+        
+        {/* <!-- Google tag (gtag.js) --> */}
+        <Script
+          strategy="afterInteractive"
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-R40MJRGC2Q"
+        ></Script>
+        <Script id="google-analytics" strategy="afterInteractive">
+          {` window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+
+              gtag('config', 'G-R40MJRGC2Q');`}
+        </Script>
+
         {/* <!-- Google Tag Manager --> */}
         <Script
           id="gtm"
