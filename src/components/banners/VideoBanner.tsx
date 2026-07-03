@@ -1,7 +1,7 @@
 import { Container, Section } from "@/components/sectionComponants";
 import { LazyLoadedVideo } from "@/components/Video";
 import LandingNavbar from "../navbar/LandingNavbar";
-import Form1 from "../forms/Form1";
+import Form2 from "../forms/Form2";
 
 interface VideoBannerProps {
   video: {
@@ -29,7 +29,7 @@ const VideoBanner: React.FC<VideoBannerProps> = ({ video, benefit }) => {
             className="bg-background/80 py-6 px-1.5 rounded-[20px] mt-8 flex flex-col gap-5 max-w-6xl w-full mx-auto"
             id="form"
           >
-            <Form1 />
+            <Form2 singleDate />
             <p
               className="text-sm text-light max-w-3xl text-center mx-auto"
               dangerouslySetInnerHTML={{ __html: benefit }}
