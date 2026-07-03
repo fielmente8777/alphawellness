@@ -1,3 +1,11 @@
+import {
+  AirConditioningIcon,
+  ComplimentaryBreakfastIcon,
+  EarlyCheckInIcon,
+  ElectronicSafeIcon,
+  FreeWifiIcon,
+  ToiletriesIcon,
+} from "@/utils/amenityIcons";
 import { contact } from "@/utils/constent";
 import { DoctorIcon, HealthBadgeIcon, HeartIcon } from "@/utils/landingIcon";
 
@@ -53,7 +61,7 @@ export const landingPageData = {
   ],
 
   packagesSectionData: {
-    title: "Alpha Wellness Packages",
+    title: "Our Signature Therapies",
     buttons: [
       { label: "CALL NOW", href: contact.callCta },
       { label: "ENQUIRE NOW", href: contact.WhatsappCta },
@@ -61,72 +69,122 @@ export const landingPageData = {
     ],
     packagesData: [
       {
+        image: "/therapies/diabetes-reversal.jpg",
         name: "Diabetes Reversal",
         duration: "3 Nights",
         description:
-          "Reduce HbA1c, improve insulin sensitivity, regain metabolic control naturally.",
-        cta: {
-          label: "Book Now",
-          href: "#form",
-        },
+          "Improve insulin sensitivity and support healthy blood sugar through personalized integrative care.",
+        cta: [
+          { label: "ENQUIRE NOW", href: contact.WhatsappCta },
+          { label: "BOOK NOW", href: "#form" },
+        ],
       },
       {
-        name: "Obesity Reset",
+        image: "/therapies/Gut-Restoration.jpg",
+        name: "Gut Restoration",
         duration: "3 Nights",
         description:
-          "Lose weight sustainably by fixing hormones, gut health, and metabolism.",
-        cta: {
-          label: "Book Now",
-          href: "#form",
-        },
+          "Restore digestive balance, reduce inflammation, and strengthen your gut microbiome for lasting health.",
+        cta: [
+          { label: "ENQUIRE NOW", href: contact.WhatsappCta },
+          { label: "BOOK NOW", href: "#form" },
+        ],
       },
       {
-        name: "Thyroid Harmony",
+        image: "/therapies/liver-health.jpg",
+        name: "Liver Health",
         duration: "3 Nights",
         description:
-          "Balance hormones and restore energy without lifelong dependency.",
-        cta: {
-          label: "Book Now",
-          href: "#form",
-        },
+          "Support natural liver detoxification and enhance metabolic function with targeted therapies.",
+        cta: [
+          { label: "ENQUIRE NOW", href: contact.WhatsappCta },
+          { label: "BOOK NOW", href: "#form" },
+        ],
       },
       {
-        name: "Gut Healing",
+        image: "/therapies/Metabolic-Reset.jpg",
+        name: "Metabolic Reset",
         duration: "3 Nights",
         description:
-          "Fix digestion, inflammation, and immunity at the root level.",
-        cta: {
-          label: "Book Now",
-          href: "#form",
-        },
+          "Rebalance hormones, optimize metabolism, and promote sustainable weight management.",
+        cta: [
+          { label: "ENQUIRE NOW", href: contact.WhatsappCta },
+          { label: "BOOK NOW", href: "#form" },
+        ],
       },
       {
+        image: "/therapies/Sleep-Reset.jpg",
         name: "Stress & Sleep Reset",
         duration: "3 Nights",
         description:
           "Rewire your nervous system, improve sleep, and eliminate burnout.",
-        cta: {
-          label: "Book Now",
-          href: "#form",
-        },
+        cta: [
+          { label: "ENQUIRE NOW", href: contact.WhatsappCta },
+          { label: "BOOK NOW", href: "#form" },
+        ],
       },
       {
-        name: "Detox & Longevity",
+        image: "/therapies/Panchakarma-Detox.jpg",
+        name: "Panchakarma Detox",
         duration: "3 Nights",
         description:
-          "Cleanse, rejuvenate, and optimize your body for long-term vitality.",
-        cta: {
-          label: "Book Now",
-          href: "#form",
-        },
+          "Deeply cleanse the body, eliminate toxins, and restore internal balance with authentic Ayurvedic detox.",
+        cta: [
+          { label: "ENQUIRE NOW", href: contact.WhatsappCta },
+          { label: "BOOK NOW", href: "#form" },
+        ],
+      },
+
+      {
+        image: "/therapies/Sleep-Restoration.jpg",
+        name: "Sleep Restoration",
+        duration: "3 Nights",
+        description:
+          "Improve sleep quality and recovery to enhance energy, focus, and overall wellbeing.",
+        cta: [
+          { label: "ENQUIRE NOW", href: contact.WhatsappCta },
+          { label: "BOOK NOW", href: "#form" },
+        ],
+      },
+      {
+        image: "/therapies/Ayurvedic-Rejuvenation.jpg",
+        name: "Ayurvedic Rejuvenation",
+        duration: "3 Nights",
+        description:
+          "Revitalize your body and mind with personalized Ayurvedic therapies for long-term vitality.",
+        cta: [
+          { label: "ENQUIRE NOW", href: contact.WhatsappCta },
+          { label: "BOOK NOW", href: "#form" },
+        ],
+      },
+      {
+        image: "/therapies/Anxiety.jpg",
+        name: "Stress & Anxiety",
+        duration: "3 Nights",
+        description:
+          "Relieve stress, calm the nervous system, and build emotional resilience naturally.",
+        cta: [
+          { label: "ENQUIRE NOW", href: contact.WhatsappCta },
+          { label: "BOOK NOW", href: "#form" },
+        ],
+      },
+      {
+        image: "/therapies/Anti-Ageing.jpg",
+        name: "Cellular Anti-Ageing",
+        duration: "3 Nights",
+        description:
+          "Support healthy aging by enhancing cellular repair, energy production, and overall vitality.",
+        cta: [
+          { label: "ENQUIRE NOW", href: contact.WhatsappCta },
+          { label: "BOOK NOW", href: "#form" },
+        ],
       },
     ],
   },
 
   rooms: {
-    title: "Luxury Wellness Cottages",
-    description:
-      "Serene spaces designed for deep rest and renewal, in nature's lap, where fresh air, open landscapes, and tranquil surroundings restore mind, body, and soul.",
+    title: "Explore Luxury Wellness Cottages",
+    description: "DESIGNED FOR LUXURY STAYS & HOLISTIC SERENITY",
     roomsData: [
       {
         images: [
@@ -140,7 +198,70 @@ export const landingPageData = {
           "/landing-page/rooms/studio/DSC05628.webp",
           "/landing-page/rooms/studio/DSC05629.webp",
         ],
-        name: "STUDIO COTTAGE",
+        name: "Studio Cottage",
+        roomType: ["2 Pax", "1 King Bed"],
+        description:
+          "Our Studio Cottage redefine indulgence with expansive layouts and elevated design, crafted for guests who seek more space, privacy, and a truly immersive stay experience.",
+        amities: [
+          {
+            icon: <EarlyCheckInIcon />,
+            title: "Early Check-in *",
+          },
+          {
+            icon: <ComplimentaryBreakfastIcon />,
+            title: "Complimentary Breakfast",
+          },
+          {
+            icon: <FreeWifiIcon />,
+            title: "Free Wi-Fi",
+          },
+          {
+            icon: <AirConditioningIcon />,
+            title: "Air Conditioning",
+          },
+          {
+            icon: <ElectronicSafeIcon />,
+            title: "Electronic Safe",
+          },
+          {
+            icon: <ToiletriesIcon />,
+            title: "Toiletries",
+          },
+        ],
+        popUpAmities: [
+          {
+            title: "Popular with Guests",
+            amities: [
+              { title: "Air Conditioning" },
+              {
+                title: "Iron/Ironing Board",
+              },
+              { title: "Bathroom" },
+              { title: "Wi-Fi" },
+            ],
+          },
+          {
+            title: "Basic Facilities",
+            amities: [{ title: "Kettle" }],
+          },
+          {
+            title: "Bathroom",
+            amities: [
+              { title: "Hairdryer" },
+              { title: "Hot & Cold Water" },
+              {
+                title: "Toiletries",
+              },
+              {
+                title: "Towels",
+              },
+            ],
+          },
+        ],
+        cta: {
+          label: "Book Now",
+          href: `#form`,
+        },
       },
       {
         images: [
@@ -152,7 +273,70 @@ export const landingPageData = {
           "/landing-page/rooms/deluxe/DSC05744.webp",
           "/landing-page/rooms/deluxe/DSC05745.webp",
         ],
-        name: "DELUXE COTTAGE",
+        name: "Deluxe Cottage",
+        roomType: ["2 Pax", "1 King Bed"],
+        description:
+          "Our Deluxe Cottage are thoughtfully designed to offer a seamless blend of comfort, functionality, and modern elegance ideal for guests who value both relaxation and efficiency.",
+        amities: [
+          {
+            icon: <EarlyCheckInIcon />,
+            title: "Early Check-in *",
+          },
+          {
+            icon: <ComplimentaryBreakfastIcon />,
+            title: "Complimentary Breakfast",
+          },
+          {
+            icon: <FreeWifiIcon />,
+            title: "Free Wi-Fi",
+          },
+          {
+            icon: <AirConditioningIcon />,
+            title: "Air Conditioning",
+          },
+          {
+            icon: <ElectronicSafeIcon />,
+            title: "Electronic Safe",
+          },
+          {
+            icon: <ToiletriesIcon />,
+            title: "Toiletries",
+          },
+        ],
+        popUpAmities: [
+          {
+            title: "Popular with Guests",
+            amities: [
+              { title: "Air Conditioning" },
+              {
+                title: "Iron/Ironing Board",
+              },
+              { title: "Bathroom" },
+              { title: "Wi-Fi" },
+            ],
+          },
+          {
+            title: "Basic Facilities",
+            amities: [{ title: "Kettle" }],
+          },
+          {
+            title: "Bathroom",
+            amities: [
+              { title: "Hairdryer" },
+              { title: "Hot & Cold Water" },
+              {
+                title: "Toiletries",
+              },
+              {
+                title: "Towels",
+              },
+            ],
+          },
+        ],
+        cta: {
+          label: "Book Now",
+          href: `#form`,
+        },
       },
     ],
     buttons: [
@@ -236,15 +420,16 @@ export const landingPageData = {
         name: "Dr. Rakshith M.M",
         profession: "Functional medicine and Ayurveda",
       },
-      {
-        image: "/landing-page/healers/healer-3.png",
-        name: "Dr. Arshiya Anjum",
-        profession: "Functional medicine PRACTITIONER",
-      },
+
       {
         image: "/landing-page/healers/healer-4.png",
         name: "Dr. Joy Varghese",
         profession: "SENIOR CONSULTANT FOR FATTY LIVER & METABOLIC DISORDERS",
+      },
+      {
+        image: "/landing-page/healers/healer-3.png",
+        name: "Dr. Arshiya Anjum",
+        profession: "Functional medicine PRACTITIONER",
       },
     ],
     buttons: [

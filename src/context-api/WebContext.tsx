@@ -1,6 +1,6 @@
 "use client";
 
-import { createContext, useContext, useState } from "react";
+import { createContext, JSX, useContext, useState } from "react";
 
 interface OpenGalleryProps {
   images: string[];
@@ -10,6 +10,13 @@ interface OpenAmenityModalArray {
   amenityType: string;
   amenities: string[];
 }
+type PopUpAmenity = {
+  title: string;
+  amities: {
+  title: string;
+  icon?: JSX.Element;
+}[];
+};
 interface WebContextType {
   isOpenNavBar: boolean;
   setIsOpenNavBar: (open: boolean) => void;
@@ -35,6 +42,13 @@ interface WebContextType {
   openGallery: ({ images, index }: OpenGalleryProps) => void;
 
   closeGallery: () => void;
+
+  isAmenityOpen: boolean;
+  setIsAmenityOpen: React.Dispatch<React.SetStateAction<boolean>>;
+  roomName: string;
+  setRoomName: React.Dispatch<React.SetStateAction<string>>;
+  popUpAminityData: PopUpAmenity[];
+  setPopUpAminityData: React.Dispatch<React.SetStateAction<PopUpAmenity[]>>;
 }
 
 const WebContext = createContext<WebContextType>({
@@ -62,6 +76,16 @@ const WebContext = createContext<WebContextType>({
   openGallery: () => {},
 
   closeGallery: () => {},
+
+  isAmenityOpen: false,
+  setIsAmenityOpen: () => {},
+
+  roomName: "",
+  setRoomName: () => {},
+
+  popUpAminityData: [],
+  setPopUpAminityData: () => {},
+
 });
 
 interface WebProviderProps {
@@ -83,6 +107,10 @@ export const WebProvider = ({ children }: WebProviderProps) => {
   const [amenityModalArray, setAmenityModalArray] = useState<
     OpenAmenityModalArray[]
   >([]);
+
+  const [isAmenityOpen, setIsAmenityOpen] = useState(false);
+  const [roomName, setRoomName] = useState("");
+  const [popUpAminityData, setPopUpAminityData] = useState<PopUpAmenity[]>([]);
   const openGallery = ({ images, index = 0 }: OpenGalleryProps) => {
     setPassImagesArray(images);
 
@@ -102,6 +130,15 @@ export const WebProvider = ({ children }: WebProviderProps) => {
   return (
     <WebContext.Provider
       value={{
+        isAmenityOpen,
+        setIsAmenityOpen,
+
+        roomName,
+        setRoomName,
+
+        popUpAminityData,
+        setPopUpAminityData,
+        
         isOpenNavBar,
         setIsOpenNavBar,
 

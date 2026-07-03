@@ -10,6 +10,7 @@ import Script from "next/script";
 import Whatsapp from "@/components/ContactButton/WhatsApp";
 import { contact } from "@/utils/constent";
 import Call from "@/components/ContactButton/Call";
+import AmenitiesPopup from "@/components/pop-up/AmenitiesPopup";
 const gfsDidot = GFS_Didot({
   variable: "--font-gfs-didot",
   subsets: ["latin"],
@@ -81,7 +82,10 @@ export default function RootLayout({
       className={`${gfsDidot.variable} ${montserrat.variable} ${tenor.variable} antialiased`}
     >
       <head>
-        <meta name="google-site-verification" content="E_5MfKghUUN7r-di4Mp7a6VBtuXgsdND5logjz5enOo" />
+        <meta
+          name="google-site-verification"
+          content="E_5MfKghUUN7r-di4Mp7a6VBtuXgsdND5logjz5enOo"
+        />
         {/* <!-- Google tag (gtag.js) --> */}
         <Script
           strategy="afterInteractive"
@@ -128,6 +132,7 @@ export default function RootLayout({
           <PopUpForm />
           <Whatsapp whatsAppNumber={contact.phone[0]} />
           <Call callNumber={contact.phone[0]} />
+          <AmenitiesPopup />
         </WebProvider>
       </body>
       {/* <!-- Eazbot Script (Next.js) --> */}

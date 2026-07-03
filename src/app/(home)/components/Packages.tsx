@@ -1,17 +1,15 @@
-"use client";
 import { packagesType } from "@/@types/landingPageTypes";
 import { SectionWithContainer } from "@/components/sectionComponants";
 import { SectionHeading } from "@/components/typography";
 import OurPackagesCard from "./cards/OurPackagesCard";
-import LinkButton from "@/components/buttons/LinkButton";
 
-const Packages: React.FC<packagesType> = ({ title, packagesData, buttons }) => {
+const Packages: React.FC<packagesType> = ({ title, packagesData }) => {
   return (
     <SectionWithContainer>
-      <div className="flex max-md:flex-col gap-6 justify-between overflow-hidden">
-        <div className="flex items-center justify-between gap-4 w-full">
-          <SectionHeading title={title} />
-          <ul className="md:flex hidden lg:gap-4 gap-2 justify-end items-center">
+      {/* <div className="flex max-md:flex-col gap-6 justify-between overflow-hidden"> */}
+      {/* <div className="flex items-center justify-between gap-4 w-full"> */}
+      <SectionHeading title={title} textCenter />
+      {/* <ul className="md:flex hidden lg:gap-4 gap-2 justify-end items-center">
             {buttons.map((button, i) => (
               <li key={i} className="max-md:w-full">
                 <LinkButton
@@ -25,15 +23,15 @@ const Packages: React.FC<packagesType> = ({ title, packagesData, buttons }) => {
                 />
               </li>
             ))}
-          </ul>
-        </div>
-      </div>
-      <div className="w-full flex flex-col gap-4 md:mt-10 mt-6">
+          </ul> */}
+      {/* </div> */}
+      {/* </div> */}
+      <div className="w-full grid md:grid-cols-2 grid-cols-1 lg:grid-cols-3 gap-8 md:mt-14 mt-6">
         {packagesData.map((card, index) => (
           <OurPackagesCard key={index} {...card} />
         ))}
       </div>
-      <ul className="flex flex-col mt-4 md:hidden lg:gap-4 gap-2  items-center">
+      {/* <ul className="flex flex-col mt-4 md:hidden lg:gap-4 gap-2  items-center">
         {buttons.map((button, i) => (
           <li key={i} className="max-md:w-full">
             <LinkButton
@@ -47,7 +45,7 @@ const Packages: React.FC<packagesType> = ({ title, packagesData, buttons }) => {
             />
           </li>
         ))}
-      </ul>
+      </ul> */}
     </SectionWithContainer>
   );
 };

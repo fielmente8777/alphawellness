@@ -1,44 +1,44 @@
 import { packagesType } from "@/@types/landingPageTypes";
 import LinkButton from "@/components/buttons/LinkButton";
 import Image from "next/image";
-import Link from "next/link";
 import { FC } from "react";
 
 const OurPackagesCard: FC<packagesType["packagesData"][0]> = ({
   description,
   name,
-  duration,
   cta,
+  image,
 }) => {
   return (
-    <div className="bg-background md:py-14 py-5 box-shadow md:px-12 px-4 rounded-3xl border border-tertiary">
-      <div className="grid grid-cols-1 md:grid-cols-5 items-center gap-6">
-        <div className="grid grid-cols-1 max-md:gap-6 md:grid-cols-7 md:col-span-4 md:divide-x-[0.5px] max-md:divide-y-[0.5px]  divide-primary items-center">
-          <div className="flex  justify-center items-center gap-3 col-span-4  max-md:pb-4">
-            <div className="w-15 md:w-20 aspect-square bg-tertiary rounded-full flex justify-center items-center">
-              <div className="w-8 aspect-square relative">
-                <Image
-                  src={"/landing-page/spa.png"}
-                  alt={name}
-                  fill
-                  className="object-contain"
-                />
-              </div>
-            </div>
-            <div className="grow w-full">
-              <h3 className="md:text-[2rem] font-primary text-2xl text-tertiary">
-                {name}
-              </h3>
-              <p className="text-light md:text-lg mt-3">{duration}</p>
-            </div>
-          </div>
-          <div className="md:pl-6 max-md:pt-1.5 col-span-3">
-            <p className="text-light md:text-lg">{description}</p>
-          </div>
-        </div>
-        <div className="md:col-span-1">
-          <LinkButton {...cta} className="w-full rounded-full justify-center text-tertiary" calendarIcon={true} />
-        </div>
+    <div className="w-full h-full">
+      <div className="relative w-full aspect-4/3.5 border-x border-primary rounded-t-2xl overflow-hidden">
+        <Image
+          src={image}
+          alt={name}
+          fill
+          className="object-cover rounded-2xl"
+        />
+      </div>
+      <div className="border-x border-b rounded-b-2xl p-4 grid grid-rows-[auto_1.4fr_auto] grid-flow-row gap-4 border-tertiary">
+        <p className="md:text-[2rem] font-primary text-2xl text-tertiary">
+          {name}
+        </p>
+        <p className="text-light grow">{description}</p>
+        <ul className="flex max-lg:flex-col  lg:gap-4 gap-2  items-center">
+          {cta.map((button, i) => (
+            <li key={i} className="max-md:w-full">
+              <LinkButton
+                {...button}
+                target={i !== 2 ? "_blank" : "_self"}
+                rel="noopener noreferrer"
+                className="btn-gradient border-none max-md:w-full justify-center rounded-full py-3 px-4"
+                whatsAppIcon={i === 1}
+                callIcon={i === 0}
+                calendarIcon={i === 2}
+              />
+            </li>
+          ))}
+        </ul>
       </div>
     </div>
   );
@@ -64,3 +64,34 @@ export const ArrowIcon = () => (
     />
   </svg>
 );
+
+// <div className="bg-background md:py-14 py-5 box-shadow md:px-12 px-4 rounded-3xl border border-tertiary">
+//       <div className="grid grid-cols-1 md:grid-cols-5 items-center gap-6">
+//         <div className="grid grid-cols-1 max-md:gap-6 md:grid-cols-7 md:col-span-4 md:divide-x-[0.5px] max-md:divide-y-[0.5px]  divide-primary items-center">
+//           <div className="flex  justify-center items-center gap-3 col-span-4  max-md:pb-4">
+//             <div className="w-15 md:w-20 aspect-square bg-tertiary rounded-full flex justify-center items-center">
+//               <div className="w-8 aspect-square relative">
+//                 <Image
+//                   src={"/landing-page/spa.png"}
+//                   alt={name}
+//                   fill
+//                   className="object-contain"
+//                 />
+//               </div>
+//             </div>
+//             <div className="grow w-full">
+//               <h3 className="md:text-[2rem] font-primary text-2xl text-tertiary">
+//                 {name}
+//               </h3>
+//               <p className="text-light md:text-lg mt-3">{duration}</p>
+//             </div>
+//           </div>
+//           <div className="md:pl-6 max-md:pt-1.5 col-span-3">
+//             <p className="text-light md:text-lg">{description}</p>
+//           </div>
+//         </div>
+//         <div className="md:col-span-1">
+//           <LinkButton {...cta} className="w-full rounded-full justify-center text-tertiary" calendarIcon={true} />
+//         </div>
+//       </div>
+//     </div>
