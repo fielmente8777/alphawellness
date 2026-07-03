@@ -45,7 +45,7 @@ const RoomsSection: React.FC<RoomsSectionProps> = ({
               <RoomsCard images={card.images} name={card.name} />
             </div>
             <div
-              className={`md:col-span-3 flex flex-col rounded-2xl border border-primary box-shadow gap-6 card-2 px-6 py-8.75 ${index % 2 === 0 ? "order-2" : "order-1"}`}
+              className={`md:col-span-3 flex flex-col rounded-2xl border border-primary box-shadow gap-6 card-2 md:px-6 px-2.5 py-8.75 ${index % 2 === 0 ? "order-2" : "order-1"}`}
             >
               <div className="space-y-2">
                 <h3 className="md:text-[2rem] text-xl text-primary font-primary">
@@ -97,7 +97,7 @@ const RoomsSection: React.FC<RoomsSectionProps> = ({
                   label={card.cta.label}
                   href={card.cta.href}
                   calendarIcon
-                  className="w-fit bg-tertiary border-none text-white rounded-full!"
+                  className="md:w-fit w-full justify-center bg-tertiary border-none text-white rounded-full!"
                 />
                 <PopupButton
                   label="All Suite Amenities"
