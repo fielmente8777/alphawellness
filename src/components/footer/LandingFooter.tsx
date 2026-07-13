@@ -130,6 +130,10 @@ const LandingFooter = () => {
             <LazyLoadedMap src={contact.mapUrl} />
           </div>
         </div>
+        <p className="text-white text-xs uppercase tracking-widest text-center my-4" >
+          Fatty Liver • PCOS & Hormonal Imbalance • Chronic Back Pain & Sciatica • Obesity & Weight Gain •
+Diabetes • Thyroid Disorders • Gut Health • Stress & Sleep
+        </p>
       </Container>
       <div className="bg-white h-0.5 w-full max_width" />
       <Container className="py-4 flex max-md:flex-col items-center gap-3.5 justify-between">

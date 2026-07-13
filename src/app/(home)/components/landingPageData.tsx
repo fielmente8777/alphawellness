@@ -69,6 +69,40 @@ export const landingPageData = {
     ],
     packagesData: [
       {
+        image: "/therapies/PCOS.jpg",
+        name: "PCOS & Hormonal Balance",
+        duration: "3 Nights",
+        description:
+          "Correct insulin resistance and rebalance hormones to regulate your cycle, skin and weight — naturally, without lifelong medication.",
+        cta: [
+          { label: "ENQUIRE NOW", href: contact.WhatsappCta },
+          { label: "BOOK NOW", href: "#form" },
+        ],
+      },
+      {
+        image: "/therapies/Spine-Back-Pain.jpg",
+        name: "Spine & Back Pain Relief",
+        duration: "3 Nights",
+        description:
+          "Non-surgical relief for chronic back pain, slip disc and sciatica through Ayurveda Kati Basti and physiotherapy.",
+        cta: [
+          { label: "ENQUIRE NOW", href: contact.WhatsappCta },
+          { label: "BOOK NOW", href: "#form" },
+        ],
+      },
+
+      {
+        image: "/therapies/liver-health.jpg",
+        name: "Liver Health & Fatty Liver",
+        duration: "3 Nights",
+        description:
+          "Support natural liver detoxification and enhance metabolic function with targeted therapies.",
+        cta: [
+          { label: "ENQUIRE NOW", href: contact.WhatsappCta },
+          { label: "BOOK NOW", href: "#form" },
+        ],
+      },
+      {
         image: "/therapies/diabetes-reversal.jpg",
         name: "Diabetes Reversal",
         duration: "3 Nights",
@@ -85,17 +119,6 @@ export const landingPageData = {
         duration: "3 Nights",
         description:
           "Restore digestive balance, reduce inflammation, and strengthen your gut microbiome for lasting health.",
-        cta: [
-          { label: "ENQUIRE NOW", href: contact.WhatsappCta },
-          { label: "BOOK NOW", href: "#form" },
-        ],
-      },
-      {
-        image: "/therapies/liver-health.jpg",
-        name: "Liver Health",
-        duration: "3 Nights",
-        description:
-          "Support natural liver detoxification and enhance metabolic function with targeted therapies.",
         cta: [
           { label: "ENQUIRE NOW", href: contact.WhatsappCta },
           { label: "BOOK NOW", href: "#form" },

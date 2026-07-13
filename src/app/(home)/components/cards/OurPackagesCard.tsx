@@ -19,8 +19,8 @@ const OurPackagesCard: FC<packagesType["packagesData"][0]> = ({
           className="object-cover rounded-2xl"
         />
       </div>
-      <div className="border-x border-b rounded-b-2xl p-4 grid grid-rows-[auto_1.4fr_auto] grid-flow-row gap-4 border-tertiary">
-        <p className="md:text-[2rem] font-primary text-2xl text-tertiary">
+      <div className="border-x border-b rounded-b-2xl p-4 grid grid-rows-[auto_1.5fr_.5fr] grid-flow-row gap-4 border-tertiary">
+        <p className="md:text-3xl font-primary text-2xl text-tertiary">
           {name}
         </p>
         <p className="text-light grow">{description}</p>
