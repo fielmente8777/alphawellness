@@ -29,7 +29,7 @@ const RoomDetailsPoUp = () => {
 
   return (
     <div
-      className={`fixed inset-0 z-999999 flex items-center justify-center bg-primary/50 backdrop-blur-md transition-all duration-300 ease-in-out ${
+      className={`fixed inset-0 z-50 flex items-center justify-center bg-primary/50 backdrop-blur-md transition-all duration-300 ease-in-out ${
         isOpenPackagePopUp
           ? "opacity-100 scale-100 visible"
           : "opacity-0 scale-95 invisible"
