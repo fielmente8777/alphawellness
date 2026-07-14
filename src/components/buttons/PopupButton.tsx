@@ -42,7 +42,7 @@ const PopupButton: React.FC<PopupButtonProps> = ({
   };
   return (
     <button
-      className={`transition-all duration-300 ease-in-out hover:scale-x-105 active:scale-95  ${className}`}
+      className={`transition-all  hover:scale-95 duration-300 ease-in-out hover:scale-x-105 active:scale-95  ${className}`}
       {...props}
       onClick={() => onclick({ roomName, popUpAminityData })}
     >

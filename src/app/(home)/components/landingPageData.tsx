@@ -74,6 +74,7 @@ export const landingPageData = {
         duration: "3 Nights",
         description:
           "Correct insulin resistance and rebalance hormones to regulate your cycle, skin and weight — naturally, without lifelong medication.",
+        details: ["PCOS (Polycystic Ovary Syndrome) is more than a reproductive condition. It is a metabolic and hormonal disorder often driven by insulin resistance, chronic inflammation, stress, and hormonal imbalances that can lead to irregular periods, weight gain, acne, hair thinning, fertility challenges, and other long-term health concerns. At Alpha Wellness Resort, the PCOS Hormonal Reset Program is designed to address these root causes rather than simply suppress symptoms with medication. By combining functional medicine, advanced hormone and metabolic testing, Ayurveda, personalized nutrition, stress management, therapeutic yoga, and targeted lifestyle interventions, the program aims to improve insulin sensitivity, restore hormonal balance, regulate menstrual cycles, support fertility, and promote sustainable weight management. Each guest receives a doctor-led, personalized treatment plan tailored to their unique hormonal profile, helping achieve long-term metabolic health, improved reproductive wellness, and lasting symptom relief through natural, evidence-based care."],
         cta: [
           { label: "ENQUIRE NOW", href: contact.WhatsappCta },
           { label: "BOOK NOW", href: "#form" },
@@ -85,6 +86,7 @@ export const landingPageData = {
         duration: "3 Nights",
         description:
           "Non-surgical relief for chronic back pain, slip disc and sciatica through Ayurveda Kati Basti and physiotherapy.",
+        details: ["Back pain is often more than a result of ageing or physical strain. It is commonly caused by poor posture, prolonged sitting, muscle weakness, inflammation, disc degeneration, or nerve compression that gradually worsens over time. The Spine Vitality & Pain Reversal Program at Alpha Wellness Resort is designed to treat these underlying causes through a comprehensive, non-surgical rehabilitation approach. By integrating functional medicine, Ayurveda, Kati Basti therapy, physiotherapy, therapeutic yoga, posture correction, and personalized lifestyle interventions, the program focuses on reducing inflammation, relieving pain, restoring spinal mobility, strengthening the core muscles, and preventing future recurrence. Every guest receives a doctor-led, individualized treatment plan based on detailed assessments, making it suitable for conditions such as chronic lower back pain, slip disc, sciatica, cervical spondylosis, and posture-related pain, while promoting long-term spinal health, improved movement, and a better quality of life."],
         cta: [
           { label: "ENQUIRE NOW", href: contact.WhatsappCta },
           { label: "BOOK NOW", href: "#form" },
@@ -97,6 +99,9 @@ export const landingPageData = {
         duration: "3 Nights",
         description:
           "Support natural liver detoxification and enhance metabolic function with targeted therapies.",
+        details: [
+          "The liver plays a vital role in detoxification, metabolism, digestion, and energy production, making its health essential for overall well-being. At Alpha Wellness Resort, the Liver Health program is designed to support individuals with fatty liver, elevated liver enzymes, metabolic disorders, and lifestyle-related liver dysfunction through a root-cause approach rather than symptom management. By integrating functional medicine, advanced diagnostic assessments, Ayurveda, personalized nutrition, therapeutic yoga, stress reduction, and targeted detoxification therapies, the program aims to reduce inflammation, improve liver function, enhance fat metabolism, and support the body's natural detoxification processes. Each treatment plan is tailored to the individual's health profile, helping restore metabolic balance, improve energy levels, optimize digestion, and promote long-term liver health in a serene, healing environment.",
+        ],
         cta: [
           { label: "ENQUIRE NOW", href: contact.WhatsappCta },
           { label: "BOOK NOW", href: "#form" },
@@ -108,6 +113,9 @@ export const landingPageData = {
         duration: "3 Nights",
         description:
           "Improve insulin sensitivity and support healthy blood sugar through personalized integrative care.",
+        details: [
+          "Diabetes is a chronic metabolic condition that develops when the body is unable to produce enough insulin or use it effectively, leading to consistently high blood sugar levels that can affect the heart, kidneys, eyes, nerves, and overall health if left unmanaged. At Alpha Wellness Resort, diabetes care focuses on addressing the root causes rather than simply controlling symptoms. Their integrative approach combines functional medicine, advanced diagnostics, Ayurveda, personalized nutrition, therapeutic yoga, stress management, and lifestyle modification to improve insulin sensitivity, regulate metabolism, reduce inflammation, and support long-term blood sugar balance. Each guest receives an individualized treatment plan designed to reduce dependence on medication where appropriate, enhance energy levels, promote healthy weight management, and restore overall metabolic wellness in a peaceful healing environment.",
+        ],
         cta: [
           { label: "ENQUIRE NOW", href: contact.WhatsappCta },
           { label: "BOOK NOW", href: "#form" },
@@ -119,6 +127,9 @@ export const landingPageData = {
         duration: "3 Nights",
         description:
           "Restore digestive balance, reduce inflammation, and strengthen your gut microbiome for lasting health.",
+        details: [
+          "Gut health is the foundation of overall wellness, influencing digestion, immunity, metabolism, hormone balance, and even mental well-being. At Alpha Wellness Resort, the Gut Restoration program is designed to identify and address the root causes of digestive issues such as bloating, acidity, constipation, irritable bowel symptoms, food sensitivities, and chronic inflammation. By combining functional medicine, advanced diagnostic testing, personalized nutrition, Ayurveda, therapeutic yoga, stress management, and targeted healing therapies, the program works to restore a healthy gut microbiome, repair the intestinal lining, improve nutrient absorption, and reduce inflammation. Rather than simply managing symptoms, the focus is on rebuilding long-term digestive health, enhancing energy levels, strengthening immunity, and supporting the body's natural healing processes for lasting wellness.",
+        ],
         cta: [
           { label: "ENQUIRE NOW", href: contact.WhatsappCta },
           { label: "BOOK NOW", href: "#form" },
@@ -130,28 +141,36 @@ export const landingPageData = {
         duration: "3 Nights",
         description:
           "Rebalance hormones, optimize metabolism, and promote sustainable weight management.",
+        details: [
+          "Metabolic health is the foundation of how your body converts food into energy, regulates hormones, maintains a healthy weight, and controls blood sugar, making it essential for long-term wellness. At Alpha Wellness Resort, the Metabolic Reset program is designed to address the root causes of metabolic dysfunction through an integrative approach that combines functional medicine, advanced diagnostics, Ayurveda, personalized nutrition, therapeutic yoga, and targeted lifestyle interventions. Rather than focusing solely on weight loss, the program aims to improve insulin sensitivity, optimize metabolism, rebalance hormones, reduce chronic inflammation, and enhance energy production, helping the body function more efficiently. Every treatment plan is tailored to the individual's unique health profile, supporting sustainable weight management, improved metabolic performance, better overall vitality, and a reduced risk of chronic lifestyle diseases through long-term lifestyle transformation.",
+        ],
         cta: [
           { label: "ENQUIRE NOW", href: contact.WhatsappCta },
           { label: "BOOK NOW", href: "#form" },
         ],
       },
-      {
-        image: "/therapies/Sleep-Reset.jpg",
-        name: "Stress & Sleep Reset",
-        duration: "3 Nights",
-        description:
-          "Rewire your nervous system, improve sleep, and eliminate burnout.",
-        cta: [
-          { label: "ENQUIRE NOW", href: contact.WhatsappCta },
-          { label: "BOOK NOW", href: "#form" },
-        ],
-      },
+      // {
+      //   image: "/therapies/Sleep-Reset.jpg",
+      //   name: "Stress & Sleep Reset",
+      //   duration: "3 Nights",
+      //   description:
+      //     "Rewire your nervous system, improve sleep, and eliminate burnout.",
+      //   details: [""],
+      //   cta: [
+      //     { label: "ENQUIRE NOW", href: contact.WhatsappCta },
+      //     { label: "BOOK NOW", href: "#form" },
+      //   ],
+      // },
       {
         image: "/therapies/Panchakarma-Detox.jpg",
         name: "Panchakarma Detox",
         duration: "3 Nights",
+
         description:
           "Deeply cleanse the body, eliminate toxins, and restore internal balance with authentic Ayurvedic detox.",
+        details: [
+          "Panchakarma is a traditional Ayurvedic detoxification and rejuvenation therapy designed to deeply cleanse the body, eliminate accumulated toxins, restore the balance of the body's natural energies, and promote holistic healing. At Alpha Wellness Resort, the Panchakarma program combines authentic Ayurvedic therapies with physician-led care, functional medicine insights, personalized nutrition, therapeutic yoga, meditation, and lifestyle guidance to deliver a comprehensive wellness experience. Rather than offering a one-size-fits-all detox, each program is tailored to the individual's health condition and wellness goals, helping improve digestion, enhance metabolism, reduce stress, strengthen immunity, increase energy levels, and support the body's natural ability to heal and regenerate. Set within a peaceful, nature-rich environment, the program provides a restorative experience that nurtures both physical and mental well-being while encouraging long-term health and vitality.",
+        ],
         cta: [
           { label: "ENQUIRE NOW", href: contact.WhatsappCta },
           { label: "BOOK NOW", href: "#form" },
@@ -164,6 +183,7 @@ export const landingPageData = {
         duration: "3 Nights",
         description:
           "Improve sleep quality and recovery to enhance energy, focus, and overall wellbeing.",
+        details: ["Quality sleep is essential for physical recovery, mental clarity, hormonal balance, and overall health, yet chronic stress, lifestyle habits, and underlying health conditions can significantly disrupt restorative rest. At Alpha Wellness Resort, the Sleep Restoration program is designed to identify and address the root causes of poor sleep rather than simply masking the symptoms. Through an integrative approach that combines functional medicine, advanced health assessments, Ayurveda, personalized nutrition, therapeutic yoga, meditation, stress management, and holistic healing therapies, the program helps regulate the body's natural sleep-wake cycle, calm the nervous system, reduce stress, and improve sleep quality. Each treatment plan is tailored to the individual's health profile and sleep challenges, with the goal of restoring deep, restorative sleep, improving daytime energy and focus, supporting emotional well-being, and promoting long-term health through sustainable lifestyle changes."],
         cta: [
           { label: "ENQUIRE NOW", href: contact.WhatsappCta },
           { label: "BOOK NOW", href: "#form" },
@@ -175,6 +195,7 @@ export const landingPageData = {
         duration: "3 Nights",
         description:
           "Revitalize your body and mind with personalized Ayurvedic therapies for long-term vitality.",
+        details: ["Ayurvedic Rejuvenation at Alpha Wellness Resort is a holistic wellness program designed to restore balance, vitality, and long-term well-being by combining the timeless principles of Ayurveda with modern functional medicine. Rather than offering temporary relaxation, the program focuses on revitalizing the body and mind through personalized Ayurvedic therapies, therapeutic massages, herbal treatments, customized nutrition, yoga, meditation, and lifestyle guidance tailored to each individual's health needs. This integrative approach helps reduce physical and mental fatigue, improve circulation, enhance digestion, strengthen immunity, relieve stress, and promote natural healing from within. Set in a serene, nature-inspired environment, the rejuvenation program encourages deep relaxation, renewed energy, improved mental clarity, and sustainable wellness, allowing guests to return home feeling healthier, refreshed, and better equipped to maintain long-term vitality."],
         cta: [
           { label: "ENQUIRE NOW", href: contact.WhatsappCta },
           { label: "BOOK NOW", href: "#form" },
@@ -186,6 +207,9 @@ export const landingPageData = {
         duration: "3 Nights",
         description:
           "Relieve stress, calm the nervous system, and build emotional resilience naturally.",
+        details: [
+          "Stress and anxiety can have a profound impact on both physical and emotional well-being, affecting sleep, focus, energy levels, hormonal balance, and overall quality of life. At Alpha Wellness Resort, the Stress & Anxiety (Calm) program is designed to help guests regain emotional balance by addressing the root causes of chronic stress rather than simply relieving its symptoms. Through an integrative approach that combines functional medicine, advanced health assessments, Ayurveda, personalized nutrition, therapeutic yoga, meditation, breathwork, and holistic healing therapies, the program works to calm the nervous system, reduce stress hormones, improve mental clarity, and build long-term emotional resilience. Every wellness plan is tailored to the individual's unique health profile, helping restore inner calm, enhance sleep quality, improve mood and focus, and create sustainable lifestyle habits that support lasting mental and physical well-being.",
+        ],
         cta: [
           { label: "ENQUIRE NOW", href: contact.WhatsappCta },
           { label: "BOOK NOW", href: "#form" },
@@ -197,6 +221,7 @@ export const landingPageData = {
         duration: "3 Nights",
         description:
           "Support healthy aging by enhancing cellular repair, energy production, and overall vitality.",
+        details: ["Cellular Anti-Ageing at Alpha Wellness Resort is a science-backed longevity program designed to promote healthy ageing by improving the body's ability to repair, regenerate, and function at the cellular level. Rather than focusing only on visible signs of ageing, the program addresses the underlying biological processes that influence energy production, inflammation, recovery, and metabolic health. By integrating functional medicine, advanced diagnostics, personalized nutrition, Ayurveda, therapeutic yoga, stress management, and evidence-based regenerative therapies, the program supports cellular repair, enhances mitochondrial function, strengthens immunity, and improves overall vitality. Each treatment plan is customized to the individual's health profile and wellness goals, helping increase energy, slow age-related decline, optimize physical and cognitive performance, and encourage long-term healthspan through sustainable lifestyle transformation."],
         cta: [
           { label: "ENQUIRE NOW", href: contact.WhatsappCta },
           { label: "BOOK NOW", href: "#form" },

@@ -11,6 +11,7 @@ export interface packagesType {
     name: string;
     duration: string;
     description: string;
+    details: string[];
     cta: {
       label: string;
       href: string;

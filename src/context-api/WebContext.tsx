@@ -13,13 +13,16 @@ interface OpenAmenityModalArray {
 type PopUpAmenity = {
   title: string;
   amities: {
-  title: string;
-  icon?: JSX.Element;
-}[];
+    title: string;
+    icon?: JSX.Element;
+  }[];
 };
 interface WebContextType {
   isOpenNavBar: boolean;
   setIsOpenNavBar: (open: boolean) => void;
+
+  isOpenPackagePopUp: boolean;
+  SetIsOpenPackagePopUp: (open: boolean) => void;
 
   openImageModal: boolean;
   setOpenImageModal: (open: boolean) => void;
@@ -41,6 +44,19 @@ interface WebContextType {
 
   openGallery: ({ images, index }: OpenGalleryProps) => void;
 
+  cta: { label: string; href: string }[];
+  setCta: React.Dispatch<
+    React.SetStateAction<{ label: string; href: string }[]>
+  >;
+  description: string;
+  setDescription: React.Dispatch<React.SetStateAction<string>>;
+  details: string[];
+  setDetails: React.Dispatch<React.SetStateAction<string[]>>;
+  image: string;
+  setImage: React.Dispatch<React.SetStateAction<string>>;
+  name: string;
+  setName: React.Dispatch<React.SetStateAction<string>>;
+
   closeGallery: () => void;
 
   isAmenityOpen: boolean;
@@ -54,6 +70,20 @@ interface WebContextType {
 const WebContext = createContext<WebContextType>({
   isOpenNavBar: false,
   setIsOpenNavBar: () => {},
+
+  isOpenPackagePopUp: false,
+  SetIsOpenPackagePopUp: () => {},
+
+  cta: [],
+  setCta: () => {},
+  description: "",
+  setDescription: () => {},
+  details: [],
+  setDetails: () => {},
+  image: "",
+  setImage: () => {},
+  name: "",
+  setName: () => {},
 
   isOpenFormPopUp: false,
   setIsOpenFormPopUp: () => {},
@@ -85,7 +115,6 @@ const WebContext = createContext<WebContextType>({
 
   popUpAminityData: [],
   setPopUpAminityData: () => {},
-
 });
 
 interface WebProviderProps {
@@ -111,6 +140,13 @@ export const WebProvider = ({ children }: WebProviderProps) => {
   const [isAmenityOpen, setIsAmenityOpen] = useState(false);
   const [roomName, setRoomName] = useState("");
   const [popUpAminityData, setPopUpAminityData] = useState<PopUpAmenity[]>([]);
+  const [isOpenPackagePopUp, SetIsOpenPackagePopUp] = useState(false);
+
+  const [cta, setCta] = useState<{ label: string; href: string }[]>([]);
+  const [description, setDescription] = useState("");
+  const [details, setDetails] = useState<string[]>([]);
+  const [image, setImage] = useState("");
+  const [name, setName] = useState("");
   const openGallery = ({ images, index = 0 }: OpenGalleryProps) => {
     setPassImagesArray(images);
 
@@ -133,12 +169,29 @@ export const WebProvider = ({ children }: WebProviderProps) => {
         isAmenityOpen,
         setIsAmenityOpen,
 
+        isOpenPackagePopUp,
+        SetIsOpenPackagePopUp,
+
+        cta,
+        setCta,
+
+        description,
+        setDescription,
+
+        details,
+        setDetails,
+
+        image,
+        setImage,
+
+        name,
+        setName,
         roomName,
         setRoomName,
 
         popUpAminityData,
         setPopUpAminityData,
-        
+
         isOpenNavBar,
         setIsOpenNavBar,
 

@@ -1,5 +1,6 @@
 import { packagesType } from "@/@types/landingPageTypes";
 import LinkButton from "@/components/buttons/LinkButton";
+import PackagePopUpBtn from "@/components/buttons/PackagePopUpBtn";
 import Image from "next/image";
 import { FC } from "react";
 
@@ -8,6 +9,7 @@ const OurPackagesCard: FC<packagesType["packagesData"][0]> = ({
   name,
   cta,
   image,
+  details,
 }) => {
   return (
     <div className="w-full h-full">
@@ -19,11 +21,23 @@ const OurPackagesCard: FC<packagesType["packagesData"][0]> = ({
           className="object-cover rounded-2xl"
         />
       </div>
-      <div className="border-x border-b rounded-b-2xl p-4 grid grid-rows-[auto_1.5fr_.5fr] grid-flow-row gap-4 border-tertiary">
+      <div className="border-x border-b rounded-b-2xl p-4 grid grid-rows-[auto_2.5fr_.5fr] grid-flow-row gap-4 border-tertiary">
         <p className="md:text-3xl font-primary text-2xl text-tertiary">
           {name}
         </p>
-        <p className="text-light grow">{description}</p>
+        <div className="">
+          <p className="text-light grow">{description}</p>
+          <PackagePopUpBtn
+            label="Know more"
+            className="capitalize font-semibold text-primary mt-3 underline underline-offset-4"
+            description={description}
+            details={details}
+            image={image}
+            name={name}
+            cta={cta}
+            duration={""}
+          />
+        </div>
         <ul className="flex max-lg:flex-col  lg:gap-4 gap-2  items-center">
           {cta.map((button, i) => (
             <li key={i} className="max-md:w-full">
@@ -32,9 +46,9 @@ const OurPackagesCard: FC<packagesType["packagesData"][0]> = ({
                 target={i !== 2 ? "_blank" : "_self"}
                 rel="noopener noreferrer"
                 className="btn-gradient border-none max-md:w-full justify-center rounded-full py-3 px-4"
-                whatsAppIcon={i === 1}
-                callIcon={i === 0}
-                calendarIcon={i === 2}
+                whatsAppIcon={i === 0}
+                // callIcon={i === 2}
+                calendarIcon={i === 1}
               />
             </li>
           ))}

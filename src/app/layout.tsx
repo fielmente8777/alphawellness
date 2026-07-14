@@ -11,6 +11,7 @@ import Whatsapp from "@/components/ContactButton/WhatsApp";
 import { contact } from "@/utils/constent";
 import Call from "@/components/ContactButton/Call";
 import AmenitiesPopup from "@/components/pop-up/AmenitiesPopup";
+import RoomDetailsPoUp from "@/components/pop-up/RoomDetailsPoUp";
 const gfsDidot = GFS_Didot({
   variable: "--font-gfs-didot",
   subsets: ["latin"],
@@ -130,6 +131,7 @@ export default function RootLayout({
           <LandingFooter />
           <ImagePopup />
           <PopUpForm />
+          <RoomDetailsPoUp />
           <Whatsapp whatsAppNumber={contact.phone[0]} />
           <Call callNumber={contact.phone[0]} />
           <AmenitiesPopup />
