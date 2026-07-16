@@ -59,7 +59,7 @@ const RoomDetailsPoUp = () => {
                     {...button}
                     target={i !== 2 ? "_blank" : "_self"}
                     rel="noopener noreferrer"
-                    className="btn-gradient border-none max-md:w-full justify-center rounded-full py-3 px-4"
+                    className="bg-tertiary text-white border-none max-md:w-full justify-center rounded-full py-3 px-4"
                     whatsAppIcon={i === 0}
                     // callIcon={i === 2}
                     calendarIcon={i === 1}
@@ -78,7 +78,7 @@ const RoomDetailsPoUp = () => {
                     {...button}
                     target={i !== 2 ? "_blank" : "_self"}
                     rel="noopener noreferrer"
-                    className="btn-gradient border-none max-md:w-full justify-center rounded-full py-3 px-4"
+                    className="bg-tertiary text-white border-none max-md:w-full justify-center rounded-full py-3 px-4"
                     whatsAppIcon={i === 0}
                     // callIcon={i === 2}
                     calendarIcon={i === 1}

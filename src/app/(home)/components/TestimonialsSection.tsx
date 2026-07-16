@@ -45,7 +45,7 @@ const TestimonialsSection: React.FC<TestimonialsSectionProps> = ({
                 {...button}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="btn-gradient border-none max-md:w-full justify-center rounded-full py-3 px-4"
+                className="bg-tertiary text-white border-none max-md:w-full justify-center rounded-full py-3 px-4"
                 whatsAppIcon={i === 1}
                 callIcon={i === 0}
                 calendarIcon={i === 2}

@@ -40,7 +40,7 @@ const LandingFooter = () => {
                     {...button}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="btn-gradient rounded-full border-none max-md:w-full justify-center py-3 px-4"
+                    className="bg-tertiary text-white rounded-full border-none max-md:w-full justify-center py-3 px-4"
                     whatsAppIcon={i === 0}
                     calendarIcon={i === 1}
                   />

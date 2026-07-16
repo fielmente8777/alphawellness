@@ -28,7 +28,7 @@ const RoomsSection: React.FC<RoomsSectionProps> = ({
               {...button}
               target={i !== 2 ? "_blank" : "_self"}
               rel="noopener noreferrer"
-              className="btn-gradient border-none max-md:w-full justify-center rounded-full py-3 px-4"
+              className="bg-tertiary text-white border-none max-md:w-full justify-center rounded-full py-3 px-4"
               whatsAppIcon={i === 1}
               callIcon={i === 0}
               calendarIcon={i === 2}
@@ -97,7 +97,7 @@ const RoomsSection: React.FC<RoomsSectionProps> = ({
                   label={card.cta.label}
                   href={card.cta.href}
                   calendarIcon
-                  className="md:w-fit w-full justify-center bg-tertiary border-none text-white rounded-full!"
+                  className="md:w-fit w-full justify-center bg-tertiary text-white border-none text-white rounded-full!"
                 />
                 <PopupButton
                   label="All Suite Amenities"

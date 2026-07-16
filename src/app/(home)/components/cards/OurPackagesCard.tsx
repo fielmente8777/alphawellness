@@ -45,7 +45,7 @@ const OurPackagesCard: FC<packagesType["packagesData"][0]> = ({
                 {...button}
                 target={i !== 2 ? "_blank" : "_self"}
                 rel="noopener noreferrer"
-                className="btn-gradient border-none max-md:w-full justify-center rounded-full py-3 px-4"
+                className="bg-tertiary text-white border-none max-md:w-full justify-center rounded-full py-3 px-4"
                 whatsAppIcon={i === 0}
                 // callIcon={i === 2}
                 calendarIcon={i === 1}
@@ -83,7 +83,7 @@ export const ArrowIcon = () => (
 //       <div className="grid grid-cols-1 md:grid-cols-5 items-center gap-6">
 //         <div className="grid grid-cols-1 max-md:gap-6 md:grid-cols-7 md:col-span-4 md:divide-x-[0.5px] max-md:divide-y-[0.5px]  divide-primary items-center">
 //           <div className="flex  justify-center items-center gap-3 col-span-4  max-md:pb-4">
-//             <div className="w-15 md:w-20 aspect-square bg-tertiary rounded-full flex justify-center items-center">
+//             <div className="w-15 md:w-20 aspect-square bg-tertiary text-white rounded-full flex justify-center items-center">
 //               <div className="w-8 aspect-square relative">
 //                 <Image
 //                   src={"/landing-page/spa.png"}
