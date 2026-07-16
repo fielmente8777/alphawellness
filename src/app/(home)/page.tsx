@@ -11,6 +11,7 @@ import Packages from "./components/Packages";
 import RoomsSection from "./components/RoomsSection";
 import SlidingGallery from "./components/SlidingGallery";
 import TestimonialsSection from "./components/TestimonialsSection";
+import LandingFooter from "@/components/footer/LandingFooter";
 
 export default function Home() {
   return (
@@ -53,6 +54,7 @@ export default function Home() {
       </Section>
       <SlidingTitle items={landingPageData.titles} ariaHidden={true} />
       <TestimonialsSection {...landingPageData.testimonials} />
+      <LandingFooter />
     </main>
   );
 }

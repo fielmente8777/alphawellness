@@ -1,17 +1,16 @@
+import Call from "@/components/ContactButton/Call";
+import Whatsapp from "@/components/ContactButton/WhatsApp";
+import AmenitiesPopup from "@/components/pop-up/AmenitiesPopup";
+import ImagePopup from "@/components/pop-up/ImagePopup";
+import PopUpForm from "@/components/pop-up/PopUpForm";
+import RoomDetailsPoUp from "@/components/pop-up/RoomDetailsPoUp";
+import { WebProvider } from "@/context-api/WebContext";
+import { contact } from "@/utils/constent";
 import type { Metadata } from "next";
-import { GFS_Didot, Montserrat, Tenor_Sans } from "next/font/google";
+import { Fraunces, GFS_Didot, IBM_Plex_Mono, Montserrat, Tenor_Sans, Work_Sans } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 import "./style.scss";
-import LandingFooter from "@/components/footer/LandingFooter";
-import ImagePopup from "@/components/pop-up/ImagePopup";
-import { WebProvider } from "@/context-api/WebContext";
-import PopUpForm from "@/components/pop-up/PopUpForm";
-import Script from "next/script";
-import Whatsapp from "@/components/ContactButton/WhatsApp";
-import { contact } from "@/utils/constent";
-import Call from "@/components/ContactButton/Call";
-import AmenitiesPopup from "@/components/pop-up/AmenitiesPopup";
-import RoomDetailsPoUp from "@/components/pop-up/RoomDetailsPoUp";
 const gfsDidot = GFS_Didot({
   variable: "--font-gfs-didot",
   subsets: ["latin"],
@@ -28,6 +27,26 @@ const tenor = Tenor_Sans({
   subsets: ["latin"],
   weight: "400",
 });
+
+
+const fraunces = Fraunces({
+  subsets: ['latin'],
+  variable: '--font-fraunces',
+  weight: ['400', '500', '600'],
+})
+
+const workSans = Work_Sans({
+  subsets: ['latin'],
+  variable: '--font-work-sans',
+  weight: ['400', '500', '600'],
+})
+
+const ibmPlexMono = IBM_Plex_Mono({
+  subsets: ['latin'],
+  variable: '--font-ibm-plex-mono',
+  weight: ['500'],
+})
+
 
 export const metadata: Metadata = {
   title:
@@ -80,7 +99,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${gfsDidot.variable} ${montserrat.variable} ${tenor.variable} antialiased`}
+      className={`${gfsDidot.variable} ${montserrat.variable} ${tenor.variable} ${fraunces.variable} ${workSans.variable} ${ibmPlexMono.variable} antialiased`}
     >
       <head>
         <meta
@@ -128,7 +147,6 @@ export default function RootLayout({
         {/* <!-- End Google Tag Manager (noscript) --> */}
         <WebProvider>
           {children}
-          <LandingFooter />
           <ImagePopup />
           <PopUpForm />
           <RoomDetailsPoUp />
