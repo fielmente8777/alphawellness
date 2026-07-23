@@ -151,7 +151,7 @@ export default function RootLayout({
           <PopUpForm />
           <RoomDetailsPoUp />
           <Whatsapp whatsAppNumber={contact.phone[0]} />
-          <Call callNumber={contact.phone[0]} />
+          <Call callNumber={contact.phone[1]} />
           <AmenitiesPopup />
         </WebProvider>
       </body>

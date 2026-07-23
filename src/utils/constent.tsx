@@ -9,7 +9,7 @@ export const contact = {
   mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3703.963821848792!2d76.72912319999999!3d12.398130799999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3baf776c962bcd51%3A0x15bc5f6ae9430c7f!2sAlpha%20Wellness%20Resort%20%7C%20Ayurveda%20%7C%20Panchakarma%20%7C%20Functional%20Medicine%20Treatments%20%7C%20Mysore!5e1!3m2!1sen!2sin!4v1781258426975!5m2!1sen!2sin",
   phone: [
     "+91 99457 69973",
-    // "+91 97311 75551"
+    "+91 97311 75551"
     // "+91 73384 89786", 
   ],
   address:
@@ -20,7 +20,7 @@ export const contact = {
     instagram: "https://www.instagram.com/acaciamorjim/",
     youtube: "https://www.youtube.com/@TheAcaciaHotelsandVillas",
   },
-  callCta: `tel:+919945769973`,
+  callCta: `tel:+919731175551`,
   WhatsappCta: `https://wa.me/+919945769973?text=${enCodeText}`,
   formDomain: "alphawellnessresort",
   // formDomain: "testmulti", //for testing
