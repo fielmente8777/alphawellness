@@ -3,6 +3,10 @@ import Whatsapp from "@/components/ContactButton/WhatsApp";
 import AmenitiesPopup from "@/components/pop-up/AmenitiesPopup";
 import ImagePopup from "@/components/pop-up/ImagePopup";
 import PopUpForm from "@/components/pop-up/PopUpForm";
+import OfferPopup from "@/components/popup/Popup";
+
+<OfferPopup onBookNow={() => (window.location.href = "/book-now")} />
+  
 import RoomDetailsPoUp from "@/components/pop-up/RoomDetailsPoUp";
 import { WebProvider } from "@/context-api/WebContext";
 import { contact } from "@/utils/constent";
@@ -148,6 +152,7 @@ export default function RootLayout({
         <WebProvider>
           {children}
           <ImagePopup />
+          <OfferPopup />
           <PopUpForm />
           <RoomDetailsPoUp />
           <Whatsapp whatsAppNumber={contact.phone[0]} />
