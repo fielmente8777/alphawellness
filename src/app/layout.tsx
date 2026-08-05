@@ -5,7 +5,6 @@ import ImagePopup from "@/components/pop-up/ImagePopup";
 import PopUpForm from "@/components/pop-up/PopUpForm";
 import OfferPopup from "@/components/popup/Popup";
 
-<OfferPopup onBookNow={() => (window.location.href = "/book-now")} />
   
 import RoomDetailsPoUp from "@/components/pop-up/RoomDetailsPoUp";
 import { WebProvider } from "@/context-api/WebContext";
