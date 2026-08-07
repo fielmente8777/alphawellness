@@ -12,6 +12,7 @@ const RoomDetailsPoUp = () => {
     SetIsOpenPackagePopUp,
     cta,
     details,
+    moreInfo,
     image,
     name,
   } = useWebContext();
@@ -27,6 +28,7 @@ const RoomDetailsPoUp = () => {
     };
   }, [isOpenPackagePopUp]);
 
+  console.log(moreInfo, details);
   return (
     <div
       className={`fixed inset-0 z-50 flex items-center justify-center bg-primary/50 backdrop-blur-md transition-all duration-300 ease-in-out ${
@@ -42,7 +44,7 @@ const RoomDetailsPoUp = () => {
         >
           <AiOutlineClose size={20} />
         </button>
-        <div className="grid lg:grid-cols-2 grid-cols-1 px-4 gap-4 max-lg:mt-7">
+        <div className="h-[80dvh] overflow-y-auto grid lg:grid-cols-2 grid-cols-1 px-4 gap-4 max-lg:mt-7">
           <div className="flex flex-col gap-4">
             <div className="relative w-full aspect-4/3">
               <Image
@@ -70,7 +72,25 @@ const RoomDetailsPoUp = () => {
           </div>
           <div className="space-y-3">
             <p className="font-primary text-dark text-2xl">{name}</p>
-            <p className="">{details}</p>
+            {details.map((item, index) => (
+              <p key={index} className="text-secondary leading-8">
+                {item}
+              </p>
+            ))}
+            {moreInfo?.map((section, index) => (
+              <div key={index} className="space-y-3">
+                <h3 className="font-heading text-2xl text-primary">
+                  {section.title}
+                </h3>
+
+                <ul className="list-disc pl-6 space-y-2 text-secondary">
+                  {section.list.map((item, i) => (
+                    <li key={i}>{item}</li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+
             <ul className="max-lg:flex hidden max-lg:flex-col  lg:gap-4 gap-2  items-center">
               {cta.map((button, i) => (
                 <li key={i} className="max-md:w-full">

@@ -12,6 +12,10 @@ export interface packagesType {
     duration: string;
     description: string;
     details: string[];
+    moreinfo?: {
+      title: string;
+      list: string[];
+    }[];
     cta: {
       label: string;
       href: string;

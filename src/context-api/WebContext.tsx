@@ -52,6 +52,19 @@ interface WebContextType {
   setDescription: React.Dispatch<React.SetStateAction<string>>;
   details: string[];
   setDetails: React.Dispatch<React.SetStateAction<string[]>>;
+  moreInfo: {
+    title: string;
+    list: string[];
+  }[];
+
+  setMoreInfo: React.Dispatch<
+    React.SetStateAction<
+      {
+        title: string;
+        list: string[];
+      }[]
+    >
+  >;
   image: string;
   setImage: React.Dispatch<React.SetStateAction<string>>;
   name: string;
@@ -80,6 +93,8 @@ const WebContext = createContext<WebContextType>({
   setDescription: () => {},
   details: [],
   setDetails: () => {},
+  moreInfo: [],
+  setMoreInfo: () => {},
   image: "",
   setImage: () => {},
   name: "",
@@ -145,6 +160,12 @@ export const WebProvider = ({ children }: WebProviderProps) => {
   const [cta, setCta] = useState<{ label: string; href: string }[]>([]);
   const [description, setDescription] = useState("");
   const [details, setDetails] = useState<string[]>([]);
+  const [moreInfo, setMoreInfo] = useState<
+    {
+      title: string;
+      list: string[];
+    }[]
+  >([]);
   const [image, setImage] = useState("");
   const [name, setName] = useState("");
   const openGallery = ({ images, index = 0 }: OpenGalleryProps) => {
@@ -181,6 +202,9 @@ export const WebProvider = ({ children }: WebProviderProps) => {
         details,
         setDetails,
 
+        moreInfo,
+        setMoreInfo,
+        
         image,
         setImage,
 

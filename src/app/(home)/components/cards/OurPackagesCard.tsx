@@ -10,6 +10,7 @@ const OurPackagesCard: FC<packagesType["packagesData"][0]> = ({
   cta,
   image,
   details,
+  moreinfo,
 }) => {
   return (
     <div className="w-full h-full">
@@ -22,16 +23,17 @@ const OurPackagesCard: FC<packagesType["packagesData"][0]> = ({
         />
       </div>
       <div className="border-x border-b rounded-b-2xl p-4 grid grid-rows-[auto_2.5fr_.5fr] grid-flow-row gap-4 border-tertiary">
-        <p className="md:text-3xl font-primary text-2xl text-tertiary">
+        <p className="md:text-2xl font-primary text-2xl text-tertiary">
           {name}
         </p>
         <div className="">
-          <p className="text-light grow">{description}</p>
+          <p className="text-light grow line-clamp-2">{description}</p>
           <PackagePopUpBtn
             label="Know more"
             className="capitalize font-semibold text-primary mt-3 underline underline-offset-4"
             description={description}
             details={details}
+            moreinfo={moreinfo}
             image={image}
             name={name}
             cta={cta}

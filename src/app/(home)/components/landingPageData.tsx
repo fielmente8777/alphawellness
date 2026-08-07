@@ -74,7 +74,9 @@ export const landingPageData = {
         duration: "3 Nights",
         description:
           "Correct insulin resistance and rebalance hormones to regulate your cycle, skin and weight — naturally, without lifelong medication.",
-        details: ["PCOS (Polycystic Ovary Syndrome) is more than a reproductive condition. It is a metabolic and hormonal disorder often driven by insulin resistance, chronic inflammation, stress, and hormonal imbalances that can lead to irregular periods, weight gain, acne, hair thinning, fertility challenges, and other long-term health concerns. At Alpha Wellness Resort, the PCOS Hormonal Reset Program is designed to address these root causes rather than simply suppress symptoms with medication. By combining functional medicine, advanced hormone and metabolic testing, Ayurveda, personalized nutrition, stress management, therapeutic yoga, and targeted lifestyle interventions, the program aims to improve insulin sensitivity, restore hormonal balance, regulate menstrual cycles, support fertility, and promote sustainable weight management. Each guest receives a doctor-led, personalized treatment plan tailored to their unique hormonal profile, helping achieve long-term metabolic health, improved reproductive wellness, and lasting symptom relief through natural, evidence-based care."],
+        details: [
+          "PCOS (Polycystic Ovary Syndrome) is more than a reproductive condition. It is a metabolic and hormonal disorder often driven by insulin resistance, chronic inflammation, stress, and hormonal imbalances that can lead to irregular periods, weight gain, acne, hair thinning, fertility challenges, and other long-term health concerns. At Alpha Wellness Resort, the PCOS Hormonal Reset Program is designed to address these root causes rather than simply suppress symptoms with medication. By combining functional medicine, advanced hormone and metabolic testing, Ayurveda, personalized nutrition, stress management, therapeutic yoga, and targeted lifestyle interventions, the program aims to improve insulin sensitivity, restore hormonal balance, regulate menstrual cycles, support fertility, and promote sustainable weight management. Each guest receives a doctor-led, personalized treatment plan tailored to their unique hormonal profile, helping achieve long-term metabolic health, improved reproductive wellness, and lasting symptom relief through natural, evidence-based care.",
+        ],
         cta: [
           { label: "ENQUIRE NOW", href: contact.WhatsappCta },
           { label: "BOOK NOW", href: "#form" },
@@ -86,7 +88,9 @@ export const landingPageData = {
         duration: "3 Nights",
         description:
           "Non-surgical relief for chronic back pain, slip disc and sciatica through Ayurveda Kati Basti and physiotherapy.",
-        details: ["Back pain is often more than a result of ageing or physical strain. It is commonly caused by poor posture, prolonged sitting, muscle weakness, inflammation, disc degeneration, or nerve compression that gradually worsens over time. The Spine Vitality & Pain Reversal Program at Alpha Wellness Resort is designed to treat these underlying causes through a comprehensive, non-surgical rehabilitation approach. By integrating functional medicine, Ayurveda, Kati Basti therapy, physiotherapy, therapeutic yoga, posture correction, and personalized lifestyle interventions, the program focuses on reducing inflammation, relieving pain, restoring spinal mobility, strengthening the core muscles, and preventing future recurrence. Every guest receives a doctor-led, individualized treatment plan based on detailed assessments, making it suitable for conditions such as chronic lower back pain, slip disc, sciatica, cervical spondylosis, and posture-related pain, while promoting long-term spinal health, improved movement, and a better quality of life."],
+        details: [
+          "Back pain is often more than a result of ageing or physical strain. It is commonly caused by poor posture, prolonged sitting, muscle weakness, inflammation, disc degeneration, or nerve compression that gradually worsens over time. The Spine Vitality & Pain Reversal Program at Alpha Wellness Resort is designed to treat these underlying causes through a comprehensive, non-surgical rehabilitation approach. By integrating functional medicine, Ayurveda, Kati Basti therapy, physiotherapy, therapeutic yoga, posture correction, and personalized lifestyle interventions, the program focuses on reducing inflammation, relieving pain, restoring spinal mobility, strengthening the core muscles, and preventing future recurrence. Every guest receives a doctor-led, individualized treatment plan based on detailed assessments, making it suitable for conditions such as chronic lower back pain, slip disc, sciatica, cervical spondylosis, and posture-related pain, while promoting long-term spinal health, improved movement, and a better quality of life.",
+        ],
         cta: [
           { label: "ENQUIRE NOW", href: contact.WhatsappCta },
           { label: "BOOK NOW", href: "#form" },
@@ -183,7 +187,9 @@ export const landingPageData = {
         duration: "3 Nights",
         description:
           "Improve sleep quality and recovery to enhance energy, focus, and overall wellbeing.",
-        details: ["Quality sleep is essential for physical recovery, mental clarity, hormonal balance, and overall health, yet chronic stress, lifestyle habits, and underlying health conditions can significantly disrupt restorative rest. At Alpha Wellness Resort, the Sleep Restoration program is designed to identify and address the root causes of poor sleep rather than simply masking the symptoms. Through an integrative approach that combines functional medicine, advanced health assessments, Ayurveda, personalized nutrition, therapeutic yoga, meditation, stress management, and holistic healing therapies, the program helps regulate the body's natural sleep-wake cycle, calm the nervous system, reduce stress, and improve sleep quality. Each treatment plan is tailored to the individual's health profile and sleep challenges, with the goal of restoring deep, restorative sleep, improving daytime energy and focus, supporting emotional well-being, and promoting long-term health through sustainable lifestyle changes."],
+        details: [
+          "Quality sleep is essential for physical recovery, mental clarity, hormonal balance, and overall health, yet chronic stress, lifestyle habits, and underlying health conditions can significantly disrupt restorative rest. At Alpha Wellness Resort, the Sleep Restoration program is designed to identify and address the root causes of poor sleep rather than simply masking the symptoms. Through an integrative approach that combines functional medicine, advanced health assessments, Ayurveda, personalized nutrition, therapeutic yoga, meditation, stress management, and holistic healing therapies, the program helps regulate the body's natural sleep-wake cycle, calm the nervous system, reduce stress, and improve sleep quality. Each treatment plan is tailored to the individual's health profile and sleep challenges, with the goal of restoring deep, restorative sleep, improving daytime energy and focus, supporting emotional well-being, and promoting long-term health through sustainable lifestyle changes.",
+        ],
         cta: [
           { label: "ENQUIRE NOW", href: contact.WhatsappCta },
           { label: "BOOK NOW", href: "#form" },
@@ -195,7 +201,9 @@ export const landingPageData = {
         duration: "3 Nights",
         description:
           "Revitalize your body and mind with personalized Ayurvedic therapies for long-term vitality.",
-        details: ["Ayurvedic Rejuvenation at Alpha Wellness Resort is a holistic wellness program designed to restore balance, vitality, and long-term well-being by combining the timeless principles of Ayurveda with modern functional medicine. Rather than offering temporary relaxation, the program focuses on revitalizing the body and mind through personalized Ayurvedic therapies, therapeutic massages, herbal treatments, customized nutrition, yoga, meditation, and lifestyle guidance tailored to each individual's health needs. This integrative approach helps reduce physical and mental fatigue, improve circulation, enhance digestion, strengthen immunity, relieve stress, and promote natural healing from within. Set in a serene, nature-inspired environment, the rejuvenation program encourages deep relaxation, renewed energy, improved mental clarity, and sustainable wellness, allowing guests to return home feeling healthier, refreshed, and better equipped to maintain long-term vitality."],
+        details: [
+          "Ayurvedic Rejuvenation at Alpha Wellness Resort is a holistic wellness program designed to restore balance, vitality, and long-term well-being by combining the timeless principles of Ayurveda with modern functional medicine. Rather than offering temporary relaxation, the program focuses on revitalizing the body and mind through personalized Ayurvedic therapies, therapeutic massages, herbal treatments, customized nutrition, yoga, meditation, and lifestyle guidance tailored to each individual's health needs. This integrative approach helps reduce physical and mental fatigue, improve circulation, enhance digestion, strengthen immunity, relieve stress, and promote natural healing from within. Set in a serene, nature-inspired environment, the rejuvenation program encourages deep relaxation, renewed energy, improved mental clarity, and sustainable wellness, allowing guests to return home feeling healthier, refreshed, and better equipped to maintain long-term vitality.",
+        ],
         cta: [
           { label: "ENQUIRE NOW", href: contact.WhatsappCta },
           { label: "BOOK NOW", href: "#form" },
@@ -221,7 +229,378 @@ export const landingPageData = {
         duration: "3 Nights",
         description:
           "Support healthy aging by enhancing cellular repair, energy production, and overall vitality.",
-        details: ["Cellular Anti-Ageing at Alpha Wellness Resort is a science-backed longevity program designed to promote healthy ageing by improving the body's ability to repair, regenerate, and function at the cellular level. Rather than focusing only on visible signs of ageing, the program addresses the underlying biological processes that influence energy production, inflammation, recovery, and metabolic health. By integrating functional medicine, advanced diagnostics, personalized nutrition, Ayurveda, therapeutic yoga, stress management, and evidence-based regenerative therapies, the program supports cellular repair, enhances mitochondrial function, strengthens immunity, and improves overall vitality. Each treatment plan is customized to the individual's health profile and wellness goals, helping increase energy, slow age-related decline, optimize physical and cognitive performance, and encourage long-term healthspan through sustainable lifestyle transformation."],
+        details: [
+          "Cellular Anti-Ageing at Alpha Wellness Resort is a science-backed longevity program designed to promote healthy ageing by improving the body's ability to repair, regenerate, and function at the cellular level. Rather than focusing only on visible signs of ageing, the program addresses the underlying biological processes that influence energy production, inflammation, recovery, and metabolic health. By integrating functional medicine, advanced diagnostics, personalized nutrition, Ayurveda, therapeutic yoga, stress management, and evidence-based regenerative therapies, the program supports cellular repair, enhances mitochondrial function, strengthens immunity, and improves overall vitality. Each treatment plan is customized to the individual's health profile and wellness goals, helping increase energy, slow age-related decline, optimize physical and cognitive performance, and encourage long-term healthspan through sustainable lifestyle transformation.",
+        ],
+        cta: [
+          { label: "ENQUIRE NOW", href: contact.WhatsappCta },
+          { label: "BOOK NOW", href: "#form" },
+        ],
+      },
+      {
+        image: "/therapies/worklife.webp",
+        name: "Wellbeing For The Workplace",
+        duration: "",
+        description:
+          "It is well known and scientifically proven that wellness leads to productivity. It is not uncommon for today’s workforce to feel exhausted, unsatisfied and stressed at the workplace and bring home insomnia. The sedentary lifestyle works against the health of our body, plaguing us with illnesses like eye strain, dry eyes, back ache, cervical spasm and carpel tunnel syndrome. A healthy mind, soul and body ensures we stay energized throughout the day and enhances concentration and productivity.",
+        details: [
+          "Naad brings you and your team a transformational journey that brings back the balance of the five senses, while restoring good health and wellness.",
+        ],
+        moreinfo: [
+          {
+            title: "Benefits To Your Associates",
+            list: [
+              "Improved insight into one's wellness and resiliency needs",
+              "Improved health and wellbeing",
+              "Stress management along with work-life balance.",
+            ],
+          },
+          {
+            title: "Benefits To Your Organisation",
+            list: [
+              "Employee health assessment enabled",
+              "Improved workplace morale",
+              "Increased staff productivity & retention",
+            ],
+          },
+          {
+            title: "Inclusions",
+            list: [
+              "Individual wellness consultation",
+              "Body composition analysis",
+              "A combination of Ayurveda and Naturopathy therapies",
+              "Dental consultation",
+              "Yogic kriyas such as Jal Neti, Kunjal Kriya, and Laghu Shankh Prakshalan",
+              "Therapeutic Yoga",
+              "Pranayama",
+              "Guided meditation",
+              "Access to fitness and leisure activities such as gym, miniature golf, lawn tennis, badminton, temperature-controlled swimming pool, reflexology track and more",
+              "Wellness cuisine including breakfast, lunch, dinner, refreshments and non-alcoholic beverages",
+            ],
+          },
+        ],
+        cta: [
+          { label: "ENQUIRE NOW", href: contact.WhatsappCta },
+          { label: "BOOK NOW", href: "#form" },
+        ],
+      },
+      {
+        image: "/therapies/weight.webp",
+        name: "Weight Management",
+        duration: "10, 14, 21 or 28 Nights",
+        description:
+          "The therapies part of this program (such as Shirodhara, Nasya, Shiroabhyanga, Acupuncture and Reflexology amongst others) shall be planned and customised by our resident doctors after an individual consultation with them.",
+        details: [],
+        moreinfo: [
+          {
+            title: "Benefits",
+            list: [
+              "Helps in preventing & alleviating diabetes",
+              "Decreases the risk of stroke",
+              "Strengthens the heart",
+              "Builds immunity against weight related illnesses",
+              "Full mind & body detox",
+              "Increases vigour & vitality",
+            ],
+          },
+          {
+            title: "Inclusions",
+            list: [
+              "Individual wellness consultation",
+              "Body composition analysis",
+              "A combination of Ayurveda and Naturopathy therapies",
+              "Dental consultation",
+              "Yogic kriyas such as Jal Neti, Kunjal Kriya, and Laghu Shankh Prakshalan",
+              "Therapeutic Yoga",
+              "Pranayama",
+              "Guided meditation",
+              "Access to fitness and leisure activities such as gym, miniature golf, lawn tennis, badminton, temperature-controlled swimming pool, reflexology track and more",
+              "Wellness cuisine including breakfast, lunch, dinner, refreshments and non-alcoholic beverages",
+              "10, 14, 21 or 28 nights stay",
+            ],
+          },
+          // {
+          //   title: "Therapies Included",
+          //   list: [
+          //     "The therapies part of this program (such as Shirodhara, Nasya, Shiroabhyanga, Acupuncture and Reflexology amongst others) shall be planned and customised by our resident doctors after an individual consultation with them."
+          //   ],
+          // },
+        ],
+        cta: [
+          { label: "ENQUIRE NOW", href: contact.WhatsappCta },
+          { label: "BOOK NOW", href: "#form" },
+        ],
+      },
+      {
+        image: "/therapies/sport.jpg",
+        name: "Sports Injury Management",
+        duration: "14, 21 or 28 Nights",
+        description:
+          "Sports Injury Management can minimise the damage to a muscle or joint and increase the chance of full recovery, while improving performance, enhancing overall health and preventing further injury. It can also help in maintaining and continuing physical activity throughout one's life.",
+        details: [],
+        moreinfo: [
+          {
+            title: "Benefits",
+            list: [
+              "Reduced pain and swelling",
+              "Decreased tissue inflammation",
+              "Reduced muscle degeneration",
+              "Reduced risk of injury",
+              "Increased balance and coordination",
+              "Improved joint health",
+              "Increased mobility and range of motion",
+              "Muscle spasm relief",
+              "Continued strengthening of weakened muscles",
+            ],
+          },
+          {
+            title: "Inclusions",
+            list: [
+              "Individual wellness consultation",
+              "Body composition analysis",
+              "A combination of Ayurveda and Naturopathy therapies",
+              "Dental consultation",
+              "Yogic kriyas such as Jal Neti, Kunjal Kriya, and Laghu Shankh Prakshalan",
+              "Therapeutic Yoga",
+              "Pranayama",
+              "Guided meditation",
+              "Access to fitness and leisure activities such as gym, miniature golf, lawn tennis, badminton, temperature-controlled swimming pool, reflexology track and more",
+              "Wellness cuisine including breakfast, lunch, dinner, refreshments and non-alcoholic beverages",
+              "14, 21 or 28 nights stay",
+            ],
+          },
+          {
+            title: "Therapies Included",
+            list: [
+              "The therapies part of this program (such as Abhyanga, Choorna Pinda Sweda, Patra Pinda Sweda, Upanaha Sweda and Packs/compress amongst others) shall be planned and customised by our resident doctors after an individual consultation with them.",
+            ],
+          },
+          {
+            title: "Disclaimer",
+            list: [
+              "Please note that Naad's doctors may request for certain medical reports prior to confirmation of your reservation for this program.",
+            ],
+          },
+        ],
+        cta: [
+          { label: "ENQUIRE NOW", href: contact.WhatsappCta },
+          { label: "BOOK NOW", href: "#form" },
+        ],
+      },
+      {
+        image: "/therapies/spine.jpeg",
+        name: "Spine Care",
+        duration: "10, 14, 21 or 28 Nights",
+        description:
+          "The spine is one of the most important parts of the body which gives it structure and support. It aids free movement and bending with flexibility.\n\nSome of the common diseases affecting the spine are cervical spondylitis, lumbar spondylitis, sciatica and degeneration of disc to name a few.",
+        details: [
+          "Spine Care by Naad helps in improving spine health which also enhances overall wellbeing.",
+        ],
+        moreinfo: [
+          {
+            title: "Benefits",
+            list: [
+              "Reduced pain and swelling",
+              "Decreased tissue inflammation",
+              "Reduced degeneration",
+              "Increased balance and coordination",
+              "Muscle spasm relief",
+              "Continued strengthening of weakened muscles",
+            ],
+          },
+          {
+            title: "Inclusions",
+            list: [
+              "Individual wellness consultation",
+              "Body composition analysis",
+              "A combination of Ayurveda and Naturopathy therapies",
+              "Dental consultation",
+              "Yogic kriyas such as Jal Neti, Kunjal Kriya, and Laghu Shankh Prakshalan",
+              "Therapeutic Yoga",
+              "Pranayama",
+              "Guided meditation",
+              "Access to fitness and leisure activities such as gym, miniature golf, lawn tennis, badminton, temperature-controlled swimming pool, reflexology track and more",
+              "Wellness cuisine including breakfast, lunch, dinner, refreshments and non-alcoholic beverages",
+              "10, 14, 21 or 28 nights stay",
+            ],
+          },
+          {
+            title: "Therapies Included",
+            list: [
+              "The therapies part of this program (such as Sarvangadhara, Choorna Pinda Sweda, Patra Pinda Sweda, Kati Basti and Greeva Basti amongst others) shall be planned and customised by our resident doctors after an individual consultation with them.",
+            ],
+          },
+          {
+            title: "Disclaimer",
+            list: [
+              "Please note that Naad's doctors may request for certain medical reports prior to confirmation of your reservation for this program.",
+            ],
+          },
+        ],
+        cta: [
+          { label: "ENQUIRE NOW", href: contact.WhatsappCta },
+          { label: "BOOK NOW", href: "#form" },
+        ],
+      },
+      {
+        image: "/therapies/pcos.webp",
+        name: "Polycystic Ovarian Syndrome (PCOS) Management",
+        duration: "10, 14, 21 or 28 Nights",
+        description:
+          "Polycystic ovarian syndrome (PCOS) is a condition in women caused by hormonal imbalance and characterised by irregular menstruation, weight gain, hair growth on the face and body, mood swings, anxiety, depression and sleep disorders.",
+        details: [
+          "It can also contribute towards long term health challenges such as diabetes, heart disease and infertility.",
+          "Naad's PCOS Management program includes integrated therapies which help in maintaining the hormonal balance and managing insulin resistance.",
+        ],
+        moreinfo: [
+          {
+            title: "Benefits",
+            list: [
+              "Regulation of hormonal imbalance",
+              "Regulation of the menstrual cycle",
+              "Reduced dependency on medication",
+              "Reduced insulin resistance",
+              "Weight management",
+              "Improved sleeping patterns",
+            ],
+          },
+          {
+            title: "Inclusions",
+            list: [
+              "Individual wellness consultation",
+              "Body composition analysis",
+              "A combination of Ayurveda and Naturopathy therapies",
+              "Dental consultation",
+              "Yogic kriyas such as Jal Neti, Kunjal Kriya, and Laghu Shankh Prakshalan",
+              "Therapeutic Yoga",
+              "Pranayama",
+              "Guided meditation",
+              "Access to fitness and leisure activities such as gym, miniature golf, lawn tennis, badminton, temperature-controlled swimming pool, reflexology track and more",
+              "Wellness cuisine including breakfast, lunch, dinner, refreshments and non-alcoholic beverages",
+              "10, 14, 21 or 28 nights stay",
+            ],
+          },
+          {
+            title: "Therapies Included",
+            list: [
+              "The therapies part of this program (such as Udwarthanam, Abhyanga, Ushma Choorna Pinda Sweda and Mud Pack amongst others) shall be planned and customised by our resident doctors after an individual consultation with them.",
+            ],
+          },
+          {
+            title: "Disclaimer",
+            list: [
+              "Please note that Naad's doctors may request for certain medical reports prior to confirmation of your reservation for this program.",
+            ],
+          },
+        ],
+        cta: [
+          { label: "ENQUIRE NOW", href: contact.WhatsappCta },
+          { label: "BOOK NOW", href: "#form" },
+        ],
+      },
+      {
+        image: "/therapies/diabetes.webp",
+        name: "Diabetes Management",
+        duration: "14, 21 or 28 Nights",
+        description:
+          "Diabetes is a metabolic disorder in which your blood glucose or blood sugar levels are too high due to either one or combined factors like insulin insufficiency and insulin resistance. Each factor has its own causative parameters which result in either Type 1 Diabetes, which is genetic in nature or Type 2 Diabetes, which can be both acquired and genetic.",
+        details: [
+          "Naad's Diabetic Management program helps you regulate the symptoms of diabetes and maintain good health in the long-run through a holistic healing approach, which encompasses regulated diet, fitness and lifestyle corrections.",
+        ],
+        moreinfo: [
+          {
+            title: "Benefits",
+            list: [
+              "Balanced fasting and post-prandial sugar levels",
+              "Long-term HbA1C control",
+              "Prevention of diabetes related complications",
+            ],
+          },
+          {
+            title: "Inclusions",
+            list: [
+              "Individual wellness consultation",
+              "Body composition analysis",
+              "A combination of Ayurveda and Naturopathy therapies",
+              "Dental consultation",
+              "Yogic kriyas such as Jal Neti, Kunjal Kriya, and Laghu Shankh Prakshalan",
+              "Therapeutic Yoga",
+              "Pranayama",
+              "Guided meditation",
+              "Access to fitness and leisure activities such as gym, miniature golf, lawn tennis, badminton, temperature-controlled swimming pool, reflexology track and more",
+              "Wellness cuisine including breakfast, lunch, dinner, refreshments and non-alcoholic beverages",
+              "14, 21 or 28 nights stay",
+            ],
+          },
+          {
+            title: "Therapies Included",
+            list: [
+              "The therapies part of this program (such as Dhanyamladhara, Choorna Pinda Sweda, Udwarthanam and Compress/packs amongst others) shall be planned and customised by our resident doctors after an individual consultation with them.",
+            ],
+          },
+          {
+            title: "Disclaimer",
+            list: [
+              "Please note that Naad's doctors may request for certain medical reports prior to confirmation of your reservation for this program.",
+            ],
+          },
+        ],
+        cta: [
+          { label: "ENQUIRE NOW", href: contact.WhatsappCta },
+          { label: "BOOK NOW", href: "#form" },
+        ],
+      },
+      {
+        image: "/therapies/arthritis.webp",
+        name: "Arthritis Management",
+        duration: "10, 14, 21 or 28 Nights",
+        description:
+          "The ancient Ayurvedic texts describe two basic types of arthritis that correspond with osteoarthritis (Sandhigata Vata) and rheumatoid arthritis (Ama Vata).",
+        details: [
+          "In Osteoarthritis, the vitiated Vata afflicts the joints and causes destruction of the cartilages and reduction in the Synovial Fluid inside the joint capsule, leading to swelling which results in the condition similar to painful movement. In Amavata vitiation of Vata Dosha and accumulation of Ama take place in joints, which simulate rheumatoid arthritis (RA) in modern parlance.",
+          "Pain, swelling and stiffness in the joints are the most common symptoms of arthritis.",
+          "Naad's Arthritis Management program endeavours to ease these symptoms, increase joint mobility and balance the aggravated dosha.",
+        ],
+        moreinfo: [
+          {
+            title: "Benefits",
+            list: [
+              "Muscle spasm relief",
+              "Reduced pain and swelling",
+              "Prevents tissue degeneration",
+              "Reduces dependence on medication",
+              "Increased mobility and range of motion",
+            ],
+          },
+          {
+            title: "Inclusions",
+            list: [
+              "Individual wellness consultation",
+              "Body composition analysis",
+              "A combination of Ayurveda and Naturopathy therapies",
+              "Dental consultation",
+              "Yogic kriyas such as Jal Neti, Kunjal Kriya, and Laghu Shankh Prakshalan",
+              "Therapeutic Yoga",
+              "Pranayama",
+              "Guided meditation",
+              "Access to fitness and leisure activities such as gym, miniature golf, lawn tennis, badminton, temperature-controlled swimming pool, reflexology track and more",
+              "Wellness cuisine including breakfast, lunch, dinner, refreshments and non-alcoholic beverages",
+              "10, 14, 21 or 28 nights stay",
+            ],
+          },
+          {
+            title: "Therapies Included",
+            list: [
+              "The therapies part of this program (such as Choorna Pinda Sweda, Upanaha Sweda, Compress/packs and Acupuncture amongst others) shall be planned and customised by our resident doctors after an individual consultation with them.",
+            ],
+          },
+          {
+            title: "Disclaimer",
+            list: [
+              "Please note that Naad's doctors may request for certain medical reports prior to confirmation of your reservation for this program.",
+            ],
+          },
+        ],
         cta: [
           { label: "ENQUIRE NOW", href: contact.WhatsappCta },
           { label: "BOOK NOW", href: "#form" },

@@ -17,6 +17,7 @@ const PackagePopUpBtn: React.FC<PopupButtonProps> = ({
     setCta,
     setDescription,
     setDetails,
+    setMoreInfo,
     setImage,
     setName,
   } = useWebContext();
@@ -24,6 +25,7 @@ const PackagePopUpBtn: React.FC<PopupButtonProps> = ({
     cta,
     description,
     details,
+    moreinfo,
     image,
     name,
   }: PopupButtonProps) => {
@@ -31,10 +33,15 @@ const PackagePopUpBtn: React.FC<PopupButtonProps> = ({
     setCta(cta);
     setDescription(description);
     setDetails(details);
+    setMoreInfo(moreinfo ?? []);
     setImage(image);
     setName(name);
   };
+
+
   return (
+
+
     <button
       className={`transition-all duration-300 ease-in-out hover:scale-x-105 active:scale-95  ${className}`}
       {...props}
